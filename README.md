@@ -1,17 +1,15 @@
 # navigation-system-ucla
-Local navigation system centered around UCLA, implemented using breadth-first search.
+Navigation system centered around UCLA, implemented using breadth-first search. The user specifies a starting and ending location from the list of 600+ locations (found in validlocs.txt) and the program outputs step-by-step directions based on the calculated optimal route. 
 
-I found this project idea from the CS32 UCLA webpage and used the provided starting files: provided.h, validlocs.txt, and mapdata.txt. 
-- provided.h - contains class definitions for the navigation system as well as basic formulas for geospatial calculations. 
-- validlocs.txt - text file that contains a current list of starting and ending locations that the navigation system can handle.
-- mapdata.txt - text file that contains thousands of geolocations around UCLA.
+Project idea from: 
+- https://www.cs.ucla.edu/
+Web provided files of geolocation data and useful formulas: 
+- provided.h, validlocs.txt, and mapdata.txt
 
-My contributions:
-I implemented most of the classes for the project according to the suggested interface in provided.h and wrote a breadth-first search algorithm using the stl queue. A map class was also implemented (similar to the stl map) to organize the geolocation data for efficient search. 
+Parts that I implemented: 
+- AttractionMapper.h/.cpp, MapLoader.h/.cpp, MyMap.h, Navigator.h/.cpp, SegmentMapper.h/.cpp  
 
-Next steps:
+Next steps (to be continued):
 - Improving the search speed 
 - Additional geolocations 
-- Graphical interface
-  
-Thank you to the UCLA professors for this project!
+- Graphical user interface
